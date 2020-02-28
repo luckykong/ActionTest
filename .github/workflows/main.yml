@@ -20,6 +20,6 @@ jobs:
         tar -xzf stata.tar.gz stata
     - name: install Stata
       run: |
-        cd ~/ActionTest/stata
-        ls -alh 
-      
+        cd ~/ActionTest/stata-installer/stata
+        ls -alh  
+        ./install

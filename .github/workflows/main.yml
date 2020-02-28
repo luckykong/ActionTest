@@ -12,9 +12,8 @@ jobs:
     - name: Run a one-line script
       run: echo Hello, world!
     - name: get Stata
-      run: curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/Stata16Linux64-Legacy.tar.gz -o stata.tar.gz
-    - name: install Stata
       run: |
+        curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/stata_moditified.tar.gz -o stata.tar.gz
         tar -xzf stata.tar.gz stata
         cd stata
         pwd

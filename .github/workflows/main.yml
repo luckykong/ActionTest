@@ -16,3 +16,11 @@ jobs:
         ls .
         wget www.google.com
         ls .
+    - name: get Stata
+      run: |
+        mkdir stata
+        cd stata
+        wget www.google.com
+    - name: cat index
+      run: cat index.html
+      

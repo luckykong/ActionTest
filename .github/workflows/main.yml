@@ -13,5 +13,5 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
       run: |
-        ls,
-        wget www.google.com.
+        ls
+        wget www.google.com

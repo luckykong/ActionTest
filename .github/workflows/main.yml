@@ -15,7 +15,7 @@ jobs:
       run: curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/Stata16Linux64-Legacy.tar.gz -o stata.tar.gz
     - name: install Stata
       run: |
-        tar -xzf stata.tar.gz
+        tar -xzf stata.tar.gz stata
         cd stata
         pwd
         ls

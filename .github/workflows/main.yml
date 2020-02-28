@@ -23,3 +23,6 @@ jobs:
         cd ~/ActionTest/stata-installer/stata
         ls -alh  
         ./install
+        cp ~/ActionTest/stata-installer/stata.lic ./stata.lic
+    - name: Run Stata
+      run: stata-mp -e ~/ActionTest/dofiles/test.do

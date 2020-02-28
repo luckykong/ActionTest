@@ -13,10 +13,11 @@ jobs:
       run: echo Hello, world!
     - name: get Stata
       run: |
-        curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/stata_moditified.tar.gz -o stata.tar.gz
+        curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/stata_moditified.tar.gz -o ~/stata.tar.gz
         tar -xzf stata.tar.gz stata
-        cd stata
-        pwd
-        ls
-        
+    - name: install Stata
+      run: |
+        cd ~/stata
+        ls -alh 
+        ./install
       

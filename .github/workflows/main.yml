@@ -1,4 +1,4 @@
-name: CI
+name: Stata
 
 on: [push]
 
@@ -14,6 +14,7 @@ jobs:
     - name: get Stata
       run: |
         curl -u tera_aimaomao:tera_aimaomao https://kita.teracloud.jp:443/dav/Stata/stata_moditified.tar.gz -o ~/stata.tar.gz
+        cd ~
         tar -xzf stata.tar.gz stata
     - name: install Stata
       run: |

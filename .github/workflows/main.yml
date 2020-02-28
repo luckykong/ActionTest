@@ -15,7 +15,7 @@ jobs:
       run: |
         cd ~
         git clone https://github.com/luckykong/ActionTest.git
-        cd ActionTest
+        cd ActionTest/stata-installer
         cat xa* > stata.tar.gz
         tar -xzf stata.tar.gz stata
     - name: install Stata
